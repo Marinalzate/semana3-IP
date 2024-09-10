@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos Multimedia</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        thead {
+            background-color: #f4f4f4;
+        }
+        tfoot {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Catálogo de Productos Multimedia</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Descripción</th>
+                <th>Vista Previa</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Video Educativo</td>
+                <td>Un video sobre naturaleza.</td>
+                <td>
+                    <video width="150" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Imagen Digital</td>
+                <td>Una imagen de alta resolución.</td>
+                <td>
+                    <img src="https://via.placeholder.com/150" alt="Imagen del producto" width="150">
+                </td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Paquete Multimedia</td>
+                <td>Incluye un archivo de audio y un gráfico SVG.</td>
+                <td>
+                    <audio controls>
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio.
+                    </audio>
+                </td>
+                <td rowspan="2">$50</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <svg width="150" height="100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="75" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                    </svg>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total de productos</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Precio Total</td>
+                <td>$85</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
